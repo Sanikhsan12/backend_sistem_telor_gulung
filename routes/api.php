@@ -17,6 +17,7 @@ use App\Http\Controllers\Api\ProductController;
 |
 */
 
+// Routing
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/profile', [UserController::class, 'profile']);
     Route::get('/users', [UserController::class, 'index']);
